@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        position: relative;
+    }
+    .sidebar{
+        display: none;
+        position: absolute;
+        background-color: pink;
+        top: 25px;
+        right: 100%;
+    }
+    .material-symbols-outlined:active ~.sidebar{
+        display: block;
+    }
+</style>
+<body>
+    <div class="main">
+        <button>
+            <span class="material-symbols-outlined">
+            menu
+        </span>
+        </button>
+        <div class="sidebar">
+        <ul class="material-symbols-outlined">
+            <li class="menu_item"><a href=""></a>Trang chủ</li>
+            <li class="menu_item"><a href=""></a>Sản phẩm</li>
+            <li class="menu_item"><a href=""></a>Diễn đàn</li>
+            <li class="menu_item"><a href=""></a>Contact</li>
+        </ul>
+        </div>
+    </div>
+</body>
+
+</html>
