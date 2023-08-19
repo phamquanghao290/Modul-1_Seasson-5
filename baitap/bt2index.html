@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #4158d0;
+            background-image: linear-gradient(43deg,
+                    #5966a6 0%,
+                    #d88c5e 46%,
+                    #a5396a 100%);
+            width: 500px;
+            height: 400px;
+        }
+
+        .slide {
+            position: relative;
+            overflow: hidden;
+            width: 400px;
+            height: 400px;
+
+        }
+
+        .slide1 {
+            flex: 1;
+            position: absolute;
+            left: 50px;
+            top: 40px;
+            border-radius: 16px;
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+            padding-top: 15px;
+            background-color: #fff;
+            display: flex;
+            transition: transform 1s ease-out;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes slideAnimation {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            33.33% {
+                transform: translateX(-100%);
+            }
+
+            66.66% {
+                transform: translateX(-200%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="slide" style="animation: slideAnimation 6s infinite;">
+            <div class="slide1">I</div>
+            <div class="slide1">Love</div>
+            <div class="slide1">You</div>
+        </div>
+    </div>
+</body>
+
+</html>

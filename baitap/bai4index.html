@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .vien {
+        width: 400px;
+        height: 400px;
+        border: 1px solid;
+        background-color: brown;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .contrainer {
+        width: 360px;
+        height: 360px;
+        background-color: antiquewhite;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .tam {
+        width: 20px;
+        height: 20px;
+        border: 1px solid orange;
+        background-color: orange;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 4;
+
+    }
+
+    .kimgiay {
+        width: 10px;
+        height: 160px;
+        background-color: black;
+        position: absolute;
+        bottom: 20px;
+        transform-origin: 50% 0%;
+        animation: rotate 60s linear infinite;
+    }
+
+    .kimgio {
+        width: 10px;
+        height: 160px;
+        background-color: brown;
+        top: 20px;
+        position: absolute;
+        animation: kimgiaychay 30s linear infinite;
+        transform-origin: 50% 100%;
+        animation: rotatea 3600s zizac infinite;
+
+    }
+
+    @keyframes rotate {
+        0% {}
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotatea {
+        0% {}
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .so12 {
+        position: absolute;
+        top: 0;
+    }
+
+    .so3 {
+        position: absolute;
+        right: 0;
+    }
+
+    .so6 {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .so9 {
+        position: absolute;
+        left: 0;
+    }
+
+    .chung {
+        margin: 1px;
+        color: aliceblue;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="vien">
+        <span class="so12 chung">12</span>
+        <span class="so3 chung">3</span>
+        <span class="so6 chung">6</span>
+        <span class="so9 chung">9</span>
+
+
+        <div class="contrainer">
+            <span class="kimgio"></span>
+            <span class="tam"></span>
+            <span class="kimgiay"></span>
+        </div>
+    </div>
+</body>
+
+</html>

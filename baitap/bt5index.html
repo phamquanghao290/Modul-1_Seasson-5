@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<style>
+    .bangchua {
+        border: 1px solid beige;
+        background-color: antiquewhite;
+        width: 200px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: width 2s;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .chung {
+        color: black;
+        padding: 4px;
+
+    }
+
+    span:hover.chung {
+        color: aliceblue;
+        background-color: black;
+        border-radius: 4px;
+
+    }
+
+    .home {
+        margin-top: 80px;
+    }
+
+    div:active.bangchua {
+        width: 1px;
+    }
+
+    body {
+        background-image: url(./img/mak-kFI_UXd0VL4-unsplash.jpg);
+        overflow: hidden;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <span class="material-symbols-outlined chung">
+            close
+        </span>
+
+        <div class="menu">
+            <span class="home chung">Home</span>
+            <span class="about chung">About</span>
+            <span class="infor chung">Info</span>
+            <span class="contact chung">Contact</span>
+            <span class="show chung">Show me more</span>
+        </div>
+
+    </div>
+</body>
+
+</html>
